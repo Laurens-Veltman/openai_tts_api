@@ -8,6 +8,7 @@ openai.fm. The API converts input text into speech, which is downloaded as a MP3
 - Customizable Parameters: Allows customization of voice options similar as on the website.
 - API Endpoint: Exposes an endpoint (/generate_tts/) for easy access to TTS functionality.
 
+## Quickstart
 1. Clone the repository:
 ```bash
 git clone https://github.com/Laurens-Veltman/openai_tts_api
@@ -21,6 +22,7 @@ docker compose up -d --build
 4. Write a prompt, play around with the voice settings.
 5. Enjoy the result. Generated audio is stored in the project directory by default.
 
+> [!NOTE]
 Please be mindful of the number of requests you make to the service. Abuse of the service or excessive 
 requests may lead to rate limiting. It's recommended to use the service responsibly and to adhere to the OpenAI usage 
 policies and guidelines. Please note that this API may stop working at any time if 
