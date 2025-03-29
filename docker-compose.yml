@@ -1,0 +1,12 @@
+services:
+  tts-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./generated_audio:/app/generated_audio
+    environment:
+      - AUDIO_DIR=/app/generated_audio
+    restart: unless-stopped
