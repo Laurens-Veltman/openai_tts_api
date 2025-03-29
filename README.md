@@ -1,11 +1,11 @@
 # OpenAI TTS API
 
 This project provides a FastAPI-based web service for generating text-to-speech (TTS) audio using the demo service on 
-openai.fm. The API converts input text into speech, which is downloaded as an MP3 file.
+openai.fm. The API converts input text into speech, which is downloaded as a MP3 file.
 
 ## Features:
-- Text-to-Speech Generation: Converts provided text into speech.
-- Customizable Parameters: Allows customization of voice options similar to the website.
+- Text-to-Speech Generation: Converts text into speech.
+- Customizable Parameters: Allows customization of voice options similar as on the website.
 - API Endpoint: Exposes an endpoint (/generate_tts/) for easy access to TTS functionality.
 
 1. Clone the repository:
