@@ -31,6 +31,6 @@ OpenAI decides to discontinue this demo service.
 ## License
 This project is released under the MIT License.
 ## Acknowledgments
-OpenAI -> [openai.fm](https://www.openai.fm/) for providing the awesome demo service.
+OpenAI -> [openai.fm](https://www.openai.fm/) for providing the demo service.
 
 This project is not affiliated with or endorsed by OpenAI
