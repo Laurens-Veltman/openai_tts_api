@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 import sys
+import tempfile
 from collections import deque
 from functools import wraps
 import time
@@ -41,6 +42,8 @@ def global_rate_limited(func):
     return wrapper
 
 generate_tts = global_rate_limited(_generate_tts)
+
+Path("generated_audio").mkdir(parents=True, exist_ok=True)
 
 # Headers
 st.set_page_config(page_title="Text-to-Speech Generator",
