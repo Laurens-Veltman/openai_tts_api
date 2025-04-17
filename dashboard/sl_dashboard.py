@@ -110,12 +110,3 @@ st.info("Please be mindful of the number of requests you make to the service. Ab
         "policies and guidelines. Please note that this API may stop working at any time if "
         "OpenAI decides to discontinue this demo service.")
 st.page_link("https://www.openai.fm/", label="OpenAI.fm ⬅️ visit the original site!")
-st.markdown("""
-<script async defer data-domain="yourstreamlitapp.streamlit.app" src="https://plausible.io/js/script.js"></script>
-""", unsafe_allow_html=True)
-
-# Analytics
-st.markdown("""
-<!-- Plausible Analytics -->
-<script async defer data-domain="your-app-name.streamlit.app" src="https://plausible.io/js/script.js"></script>
-""", unsafe_allow_html=True)
