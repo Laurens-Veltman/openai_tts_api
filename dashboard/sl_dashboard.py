@@ -55,8 +55,8 @@ st.caption("[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20on%20GitH
 # Inputs
 st.sidebar.header("Configuration")
 prompt_text = st.text_area("Script:", "Hi there! This is a text to speech demo.",height=150)
-voice = st.sidebar.radio("Select Voice", VALID_VOICES)
-vibe = st.sidebar.selectbox("Select Vibe", list(VALID_VIBES.keys()))
+voice = st.sidebar.radio("Voice", VALID_VOICES)
+vibe = st.sidebar.selectbox("Vibe", list(VALID_VIBES.keys()))
 if vibe:
     instructions = VALID_VIBES[vibe]
     instructions = st.sidebar.text_area("Instructions", instructions)
@@ -66,7 +66,7 @@ if vibe:
         instructions = None
 
 # Query the API
-if st.button("Generate Speech"):
+if st.button("Generate speech"):
     if not prompt_text.strip():
         st.warning("Please enter text.")
     else:
