@@ -108,8 +108,9 @@ if "last_audio" in st.session_state:
 # Info
 st.write("A Streamlit-based frontend wrapper for the OpenAI.fm TTS API. "
          "This project is not affiliated with or endorsed by OpenAI.")
-st.info("Please be mindful of the number of requests you make to the service. Abuse of the service or excessive "
-        "requests may lead to rate limiting. It's recommended to use the service responsibly and to adhere to the OpenAI usage "
-        "policies and guidelines. Please note that this API may stop working at any time if "
+st.info("Please be mindful of the number of requests you make to the service. The global rate limit in this public "
+        "streamlit app is set to 10 requests per minute. "
+        "It's recommended to use the service responsibly and to adhere to the OpenAI usage "
+        "policies and guidelines. Please note that this app may stop working at any time if "
         "OpenAI decides to discontinue this demo service.")
 st.page_link("https://www.openai.fm/", label="OpenAI.fm ⬅️ visit the original site!")
