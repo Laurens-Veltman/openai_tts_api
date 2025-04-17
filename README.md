@@ -7,6 +7,7 @@ openai.fm. The API converts input text into speech, which is downloaded as a MP3
 - Text-to-Speech Generation: Converts text into speech.
 - Customizable Parameters: Allows customization of voice options similar as on the website.
 - API Endpoint: Exposes an endpoint (/generate_tts/) for easy access to TTS functionality.
+- Streamlit GUI wrapper
 
 ## Quickstart
 1. Clone the repository:
@@ -21,6 +22,11 @@ docker compose up -d --build
 3. Access the server on port 8000. (e.g., localhost:8000/docs#/)
 4. Write a prompt, play around with the voice settings.
 5. Enjoy the result. Generated audio is stored in the project directory by default.
+
+## Streamlit
+```bash
+streamlit run dashboard/sl_dashboard.py
+```
 
 > [!NOTE]
 Please be mindful of the number of requests you make to the service. Abuse of the service or excessive 
